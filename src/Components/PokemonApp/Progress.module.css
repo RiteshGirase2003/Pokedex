@@ -1,0 +1,32 @@
+.progressBar{
+    /* border: 2px solid rgb(60, 0, 255); */
+    width:20rem;
+    margin: 0.5em 0;
+
+}
+.item{
+    display: flex;
+    align-items: center;
+}
+
+.name{
+    width: 40%;
+    text-align: left;
+    font-weight: 500;
+    
+}
+.bar{
+    width: 60%;
+    height: 1rem;
+    background:  #93B2B2;
+    border-radius: 4px;
+}
+
+.progress{
+    background: #2E3156;
+    height: 100%;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.5rem;
+    padding : auto;
+}

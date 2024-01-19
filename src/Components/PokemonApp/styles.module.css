@@ -1,0 +1,60 @@
+.container{
+    
+    /* border: 2px solid red; */
+    margin:1rem auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.card{
+    width: 15%;
+    height: 15rem;
+    
+    margin: 0  auto;
+    margin-top: 1em;
+    /* border-radius: 4px; */
+         
+}   
+
+.rowBreak {
+    width: 100%;
+    flex-basis: 100%;
+    height: 0;
+  }
+  
+.NavBtns{
+    width: 100%;
+    height: 4em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+
+}
+
+.NavBtn{
+    width: 20%;
+}
+
+.NavBtn Button{
+    background: rgb(212, 255, 242);
+    width: 100%;
+    height: 100%;
+    border:none;
+
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(64, 64, 64, 0.434);
+}
+
+.NavBtn Button:hover{
+    background: rgb(167, 255, 228);
+    border: 1px solid rgb(92, 92, 92);
+    box-shadow: 0 0 10px rgba(49, 49, 49, 0.683);
+
+}
+
+.FontAwesome{
+    z-index: 0;
+}

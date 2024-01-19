@@ -1,0 +1,179 @@
+.rowBreak {
+  width: 100%;
+  flex-basis: 100%;
+  height: 0;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.409); */
+    background: rgba(46, 49, 86, 0.90);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .overlayContent {
+    height: 100%;
+    width: 60%;
+    background: #DEEDED;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .firstButton{
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    background: #ffa9a9;
+    border: none;
+    margin: 0 0.2rem;
+  }
+
+  .firstButton:hover{
+    font-weight: bold;
+    /* background: rgb(252, 63, 63); */
+  }
+
+  .first{
+    display: flex;
+    
+  }
+
+  .Info{
+    width: 80%;
+    /* border: 2px solid green; */
+  }
+  .name_id{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 1rem;
+    /* border: solid 2px green; */
+    height: 3rem;
+    width: 90%;
+    
+  }
+
+  .des{
+    padding: 1rem;
+  }
+  
+  
+  .pokeName{
+    /* border: 2px solid red; */
+    
+    width:50%;
+  }
+  .id{
+    width:10%;
+  }
+  h1{
+    letter-spacing: 0.2rem;
+  }
+
+  .line{
+    width:0.1rem;
+    height: 3rem;
+    background: #5D5F7E;
+    margin : 0 0.5rem;
+  }
+
+  .second{
+    margin-top: 1rem;
+
+  }
+  .second_1{
+    display: flex;
+    justify-content: space-around;
+  }
+  .third {
+    /* border: 2px solid red; */
+    margin-top: 1rem;
+  }
+  
+  .third_1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .abilities,
+  .types {
+    /* border: 2px solid rgb(34, 255, 0); */
+    width: 30%;
+    
+    margin: 0 auto;
+    box-sizing: border-box; 
+  }
+  
+  .type {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+
+    margin: 0.25rem 0.5rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    
+  }
+  
+  .card 
+  {
+    width: 10rem;
+    height: 13rem;
+    
+  }
+
+  .evolutionChain{
+    margin-top: 0.5rem;
+    
+    display:flex;
+    
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+    margin :0.2rem 0;
+
+  }
+  .evolutionCard{
+    width: 10rem;
+    height: 13rem;
+  }
+
+
+  .fontAwesome{
+
+    font-size: 2rem;
+    font-weight: bold;
+
+  }
+
+  
+/* stats bar */
+.container{
+  background: #B0D2D2;
+
+}
+.stats{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-radius: 4px;
+  width: auto;
+  /* border: 2px solid red; */
+  padding: 0.1em 0.5em;   
+  color: #2E3156;
+}
+
+.statBar{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  width: 90%;
+  /* border: 2px solid rgb(0, 255, 140); */
+  
+}

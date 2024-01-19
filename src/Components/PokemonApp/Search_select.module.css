@@ -1,0 +1,83 @@
+.container{
+    width: 30%;
+    color: #2E3156;
+    border-radius: 4px;
+    background: #C9DDE2;
+    padding : 1em ;
+    
+    /* border: 2px solid red; */
+}
+.box{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text{
+    color: #2E3156;
+}
+
+.text .span{
+    font-weight: bold;
+
+}
+
+.Stroke{
+    height: 0.5rem;
+}
+
+/* -------------------- */
+.overlay1{
+    margin-top: 1.5rem;
+    background: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 49, 86, 0.20);
+    position: relative;
+
+}
+
+.Line{
+    /* border-bottom: 2px solid rgba(46, 49, 86, 0.20); */
+    width: 100%;
+    height: 0.1rem;
+    background: rgba(46, 49, 86, 0.20);
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+
+.item{
+    display: flex;
+}
+
+.item_list{
+    margin-left: 1em;
+}
+/* ---- */
+
+.overlay2{
+    width: 25rem;
+    margin-top: 1.5rem;
+    background: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 49, 86, 0.20);   
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -100%;
+    /* z-index: 2; */
+}
+
+.SliderBar{
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+/* --- */
+.overlay1, .overlay2{
+    z-index: 2;
+
+}
