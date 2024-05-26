@@ -4,15 +4,25 @@ import Search_select1 from './Search_select1'
 import Search_select2 from './Search_select2'
 import Search_select3 from './Search_select3'
 import OwnFetch from './OwnFetch'
+import SearchFetch from './SearchFetch';
 
 function Search() {
 
-    const [search1Visible, setSearch1Visible] = useState(false);
-    const [search2Visible, setSearch2Visible] = useState(false);
-    const [search3Visible, setSearch3Visible] = useState(false);
+   
 
+    const [types, setTypes] = useState([]);
+    const [gender, setGender] = useState([]);
+    const [sliders, setSlider] = useState([]);
 
-    
+    const handleSearch1 = (selectedOptions) =>{
+        setTypes(selectedOptions);
+    }
+    const handleSearch2 = (selectedOptions) =>{
+        setGender(selectedOptions);
+    }
+    const handleSearch3 = (selectedSlider) =>{
+        setSlider(selectedSlider);
+    }
 
   return (
     <div>
@@ -51,13 +61,13 @@ function Search() {
                 </div>
                 <div className={style.category}>
                     
-                    <Search_select1 ></Search_select1>
+                    <Search_select1 onApply={handleSearch1}></Search_select1>
 
                     
-                    <Search_select2></Search_select2>
+                    <Search_select2 onApply={handleSearch2}></Search_select2>
 
 
-                    <Search_select3></Search_select3>
+                    <Search_select3 onApply={handleSearch3}></Search_select3>
 
 
                     
@@ -65,8 +75,13 @@ function Search() {
             </div>
         </div>
 
-        <OwnFetch/>
 
+        {/* {(sliders.length || types.length || gender.length) ?
+        <SearchFetch sliders={sliders} types={types} genders={gender} />:
+        <OwnFetch/>
+        } */}
+
+        <OwnFetch/>
         
     </div>
   )
